@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilo.css">
+</head>
+
+<body>
+
+    <div class="valor">
+        <label for="entrada">valor:</label>
+        <div>
+            <input type="text" id="entrada" placeholder="Digite algum número">
+        </div>
+        <button id="add" type="submit" class="botao">Adicionar</button> 
+    </div>
+
+    <div class="separa"></div>
+
+    <!--nessa parte a Bubble sort deve aparecer como selecionada inicialmente-->
+    <div class="selecione">
+        <div>
+            <label for="selecione"></label>
+            <select id="selecione">
+                <option value="bubble_sort">Bubble Sort</option>
+                <option value="decrescente">Decrescente</option>
+            </select>
+        </div>
+        <button id="ordenar" class="botao">ordenar</button>
+        <button id="misturar" class="botao">misturar</button>
+    </div>
+
+    <div class="lista">
+        <ul id="valores">
+            <li>3</li>
+            <li>9</li>
+            <li>1</li>
+        </ul>
+    </div>
+
+    <script src="./src/js/ordenando.js"></script>
+</body>
+
+</html>
